@@ -56,7 +56,27 @@ Load modules
 The remaining installation will be the same
 
 
-## Example
+## Example on Fortran
+
+Copy files from Example into some directory and compile Fortran program
+
+> make
+
+Run exemple:
+
+> ./wtb
+
+```
+1-D Laplacian Eigenproblem, n =  30 (Fortran)
+ Solution method: krylovschur                                                                     
+ Number of requested eigenvalues:   1
+ Linear eigensolve converged (1 eigenpair) due to CONVERGED_TOL; iterations 4
+ ---------------------- --------------------
+            k             ||Ax-kx||/||kx||
+ ---------------------- --------------------
+        3.989739            9.54461e-09
+ ---------------------- --------------------
+``` 
 
 
 
