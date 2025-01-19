@@ -45,4 +45,20 @@ and untar
 > make SLEPC_DIR=/home/3811/slepc-3.22.2 PETSC_DIR=/home/3811/petsc-3.22.2 PETSC_ARCH=arch-linux-c-debug
 
 
+## Installation on BRIDGES-2 cluster of Pittsburg SuperComputer Center
+
+Load modules
+
+> module load intel-compiler/2023.2.1
+
+> module load intel-mpi/2021.10.0
+
+The remaining installation will be the same
+
+
+## Example
+
+
+
+
 
