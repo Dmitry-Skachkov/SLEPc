@@ -58,7 +58,7 @@ The remaining installation will be the same
 
 ## Example on Fortran
 
-Copy files from Example into some directory and compile Fortran program
+Copy files from [Example](Example) into some directory and compile Fortran program
 
 > make
 
