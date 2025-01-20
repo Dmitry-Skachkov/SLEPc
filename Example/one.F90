@@ -43,7 +43,7 @@ contains
       EPS            eps
       EPSType        tname
       PetscInt       n, i, Istart, Iend, one, two, three
-      PetscInt       nev
+      PetscInt       nev,ncv,mpd
       PetscInt       row(1), col(3)
       PetscMPIInt    rank
       PetscErrorCode ierr
@@ -63,7 +63,7 @@ contains
         stop
       endif
       PetscCallMPIA(MPI_Comm_rank(PETSC_COMM_WORLD,rank,ierr))
-      n = 30
+      n = 100
       PetscCallA(PetscOptionsGetInt(PETSC_NULL_OPTIONS,PETSC_NULL_CHARACTER,'-n',n,flg,ierr))
 
       if (rank .eq. 0) then
@@ -125,6 +125,16 @@ contains
 
 !     ** Set solver parameters at runtime
       PetscCallA(EPSSetFromOptions(eps,ierr))
+
+      nev = 10
+      ncv = 20
+      mpd = 20
+      PetscCallA(EPSSetDimensions(eps,nev,ncv,mpd,ierr))
+      if (rank .eq. 0) then
+        write(*,130) nev
+        write(*,131) ierr
+      endif
+ 131  format (' ierr:',I4)
 
 ! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 !     Solve the eigensystem
