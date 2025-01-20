@@ -94,7 +94,7 @@ Run exemple:
 Larger test for n=3000 (size of matrix) and nev=1000 (number of solutions)
 
 ```
-ncv=2000 mpd=2000
+ncv=2000 (subspace) mpd=2000 (projectors)
 cores     calc time (s)
   1         227
   2         145
@@ -102,10 +102,23 @@ cores     calc time (s)
 128         365
 ```
 
+```
+ncv=1200 (subspace) mpd=400 (projectors)
+cores     calc time (s)
+  1        113.5
+ 32         17.1
+```
+
+```
+ncv=1200 (subspace) mpd=300 (projectors)
+cores     calc time (s)
+  1         98.0
+ 32         16.9
+```
 
 
 ```
-ncv=1200 mpd=200
+ncv=1200 (subspace) mpd=200 (projectors)
 cores     calc time (s)
   1         84.6
   4         28.2
@@ -113,6 +126,22 @@ cores     calc time (s)
  16         13.4
  32         12.8
  64         18.2
+```
+
+```
+ncv=1100 (subspace) mpd=160 (projectors)
+cores     calc time (s)
+  1         89.9
+ 32         13.6
+ 64         20.3
+```
+
+```
+ncv=1100 (subspace) mpd=100 (projectors) max_it=300
+cores     calc time (s)
+  1        109.1
+ 32         13.7
+ 64         15.2
 ```
 
 
