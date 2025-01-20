@@ -1,3 +1,4 @@
+default: main
 
 export DIR=${PWD}
 export SLEPC_DIR=${DIR}/slepc-3.22.2
@@ -9,7 +10,10 @@ CFLAGS     =
 FFLAGS     = -cpp -dM -I${SLEPC_DIR}/include -I${PETSC_DIR}/include
 CPPFLAGS   =
 
-main: main.o
+OBJ = one.o \
+      main.o
+
+main: $(OBJ)
 			-${CLINKER} -o wtb *.o ${SLEPC_SYS_LIB}
 			${RM} main.o
            
