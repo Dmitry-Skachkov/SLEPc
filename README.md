@@ -67,15 +67,28 @@ Run exemple:
 > ./wtb
 
 ```
-1-D Laplacian Eigenproblem, n =  30 (Fortran)
+1-D Laplacian Eigenproblem, n = 100 (Fortran)
+ Number of requested eigenvalues:  10
+ ierr:   0
  Solution method: krylovschur                                                                     
- Number of requested eigenvalues:   1
- Linear eigensolve converged (1 eigenpair) due to CONVERGED_TOL; iterations 4
+ Number of requested eigenvalues:  10
+ Linear eigensolve converged (10 eigenpairs) due to CONVERGED_TOL; iterations 40
  ---------------------- --------------------
             k             ||Ax-kx||/||kx||
  ---------------------- --------------------
-        3.989739            9.54461e-09
+        3.999756            4.19575e-09
+        3.999023            9.31525e-09
+        3.997802            3.46131e-09
+        3.996093            7.97019e-09
+        3.993896            1.60115e-09
+        3.991212             5.5682e-09
+        3.988042            6.69835e-09
+        3.984386            7.69882e-09
+        3.980245            2.13191e-09
+        3.975621            3.77331e-09
  ---------------------- --------------------
+ calc time =  0.20098399999999997       s
+
 ``` 
 
 
