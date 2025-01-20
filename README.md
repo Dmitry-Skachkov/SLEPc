@@ -91,7 +91,15 @@ Run exemple:
 
 ``` 
 
+Larger test for n=3000
 
+```
+cores     calc time (s)
+  1         227
+  2         145
+  4         123
+128         365
+```
 
 
 
