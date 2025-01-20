@@ -91,14 +91,28 @@ Run exemple:
 
 ``` 
 
-Larger test for n=3000
+Larger test for n=3000 (size of matrix) and nev=1000 (number of solutions)
 
 ```
+ncv=2000 mpd=2000
 cores     calc time (s)
   1         227
   2         145
   4         123
 128         365
+```
+
+
+
+```
+ncv=1200 mpd=200
+cores     calc time (s)
+  1         84.6
+  4         28.2
+  8         17.2
+ 16         13.4
+ 32         12.8
+ 64         18.2
 ```
 
 
