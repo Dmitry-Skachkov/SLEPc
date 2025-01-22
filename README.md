@@ -60,6 +60,6 @@ The remaining installation will be the same
 
 Example 1 solve large system for 3000 x 3000 and calculate 1000 first lowest eigenvalues.
 
-Example 2 calculate eigenvalues and eigenvectors and store them into arrays. 
+Example 2 calculate eigenvalues and eigenvectors, store them into arrays, and check the solutions. 
 
 
