@@ -1,6 +1,6 @@
 # Example 1
 
-Copy files from [Example](Example) into some directory and compile Fortran program
+Copy files from this folder into some directory and compile Fortran program
 
 > make
 
