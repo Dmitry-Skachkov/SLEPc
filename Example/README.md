@@ -6,7 +6,7 @@ Copy files from this folder into some directory and compile Fortran program
 
 Run exemple:
 
-> ./wtb
+> mpiexec -n 32 ./wtb
 
 ```
 1-D Laplacian Eigenproblem, n = 100 (Fortran)
