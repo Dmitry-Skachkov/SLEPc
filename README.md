@@ -1,5 +1,7 @@
 # SLEPc installation and examples
 
+[SLEPc](https://slepc.upv.es), the Scalable Library for Eigenvalue Problem Computations, is a software library for the solution of large scale sparse eigenvalue problems on parallel computers.
+
 ## Installation on DARWIN cluster of University of Delaware
 
 Load the compilers:
