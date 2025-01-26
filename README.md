@@ -20,7 +20,7 @@ untar the archive
 
 Configure the package with complex scalars
 
-> ./configure --with-scalar-type=complex
+> ./configure --with-scalar-type=complex --with-debugging=no
 
 Make installation:
 
