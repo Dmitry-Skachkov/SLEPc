@@ -55,6 +55,12 @@ Load modules
 
 > module load intel-mpi/2021.10.0
 
+or
+
+```
+module load openmpi/4.0.2-intel20.4
+```
+
 The remaining installation will be the same
 
 
