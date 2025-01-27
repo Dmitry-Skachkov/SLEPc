@@ -4,12 +4,7 @@ Module module_slepc_solver
   implicit none
 contains
  
-
-
-
      subroutine slepc_solver(HX,EX,HE,NX,NE)
-!#include <slepc/finclude/slepceps.h>
-!      use slepceps
       Mat            HH
       Vec            xx
       EPS            eps
@@ -34,21 +29,11 @@ contains
       max_it = 150                                                        ! max number of iterations
       PetscCallA(SlepcInitialize(PETSC_NULL_CHARACTER,ierr))              ! initialize SLEPc
       PetscCallMPIA(MPI_Comm_rank(PETSC_COMM_WORLD,rank,ierr))            ! Initialize MPI processes
-!      PetscCallA(PetscPrintf(PETSC_COMM_WORLD,'MPI_Comm_rank \n',ierr))
-!      PetscCallA(PetscTime(ts0,ierr))
       PetscCallA(MatCreate(PETSC_COMM_WORLD,HH,ierr))                     ! create matrix HH
-!      PetscCallA(PetscPrintf(PETSC_COMM_WORLD,'MatCreate \n',ierr))
       PetscCallA(MatSetSizes(HH,PETSC_DECIDE,PETSC_DECIDE,ns,ns,ierr))    ! set size of the matrix HH (ns x ns)
-!      PetscCallA(PetscPrintf(PETSC_COMM_WORLD,'MatSetSizes \n',ierr))
       PetscCallA(MatSetFromOptions(HH,ierr))                              ! type of matrix HH (default MATAIJ)
-!      PetscCallA(PetscPrintf(PETSC_COMM_WORLD,'MatSetFromOptions \n',ierr))
       PetscCallA(MatGetOwnershipRange(HH,Istart,Iend,ierr))               ! start to fill matrix HH in parallel
-!      PetscCallA(PetscPrintf(PETSC_COMM_WORLD,'MatGetOwnershipRange \n',ierr))
       PetscCallA(MatCreateVecs(HH,xx,PETSC_NULL_VEC,ierr))                ! create vector xx for eigenvectors
-!      PetscCallA(PetscPrintf(PETSC_COMM_WORLD,'MatCreateVecs \n',ierr))
-!      PetscCallA(PetscTime(tsf,ierr))
-!      PetscCallA(PetscPrintf(PETSC_COMM_WORLD,'initialization ',ierr))
-!      if(rank==0) print *,'calc time=',(tsf-ts0)
 
       PetscCallA(PetscTime(ts0,ierr))
       do is=Istart,Iend-1                                                 ! fill Hamiltonian in parallel regime
@@ -107,8 +92,7 @@ contains
 
 ! --------------------------------------------------------------
 !
-!  MyEPSMonitor - This is a user-defined routine for monitoring
-!  the EPS iterative solvers.
+!  MyEPSMonitor - This is a user-defined routine for monitoring the EPS iterative solvers.
 !
 !  Input Parameters:
 !    eps   - eigensolver context
