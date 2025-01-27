@@ -6,9 +6,7 @@
 
 Load the compilers:
 
-> vpkg_require openmpi/5.0.2:intel-oneapi-2024
-
-> vpkg_require intel-oneapi-mkl/2024
+> vpkg_require openmpi/4.1.5:intel-2020
 
 Download PETSc library archive:
 
