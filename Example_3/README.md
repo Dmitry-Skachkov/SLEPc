@@ -1,0 +1,52 @@
+Create SLEPc solver as a subroutine with external arrays, solve large system, and print convergence process  
+
+
+```
+matrix assembling calc time=   1.97833649300000     
+    1 EPS pair=   1 value (error)      0.1527E+01 (  5.15    )
+    2 EPS pair=   1 value (error)      0.1036E+01 (  1.74    )
+    3 EPS pair=   1 value (error)      0.1004E+01 ( 0.626    )
+    4 EPS pair=   1 value (error)      0.1001E+01 ( 0.216    )
+    5 EPS pair=   1 value (error)      0.1000E+01 ( 0.888E-01)
+    6 EPS pair=   1 value (error)      0.1000E+01 ( 0.189E-01)
+    7 EPS pair=   1 value (error)      0.1000E+01 ( 0.307E-02)
+    8 EPS pair=   1 value (error)      0.1000E+01 ( 0.327E-03)
+    9 EPS pair=   1 value (error)      0.1000E+01 ( 0.202E-04)
+   10 EPS pair=   1 value (error)      0.1000E+01 ( 0.105E-05)
+   11 EPS pair=   1 value (error)      0.1000E+01 ( 0.285E-07)
+   12 EPS pair=   2 value (error)      0.2000E+01 ( 0.938E-07)
+   13 EPS pair=   3 value (error)      0.3000E+01 ( 0.114E-07)
+   14 EPS pair=   5 value (error)      0.5000E+01 ( 0.125E-07)
+   15 EPS pair=   7 value (error)      0.7000E+01 ( 0.222E-07)
+   16 EPS pair=   9 value (error)      0.9000E+01 ( 0.312E-07)
+   17 EPS pair=  11 value (error)      0.1100E+02 ( 0.114E-07)
+   18 EPS pair=  13 value (error)      0.1300E+02 ( 0.408E-07)
+   19 EPS pair=  16 value (error)      0.1600E+02 ( 0.436E-07)
+   20 EPS pair=  18 value (error)      0.1800E+02 ( 0.118E-07)
+   21 EPS pair=  22 value (error)      0.2200E+02 ( 0.279E-07)
+   22 EPS pair=  25 value (error)      0.2500E+02 ( 0.323E-07)
+   23 EPS pair=  27 value (error)      0.2700E+02 ( 0.109E-07)
+   24 EPS pair=  31 value (error)      0.3100E+02 ( 0.111E-07)
+   25 EPS pair=  35 value (error)      0.3500E+02 ( 0.150E-07)
+   26 EPS pair=  39 value (error)      0.3900E+02 ( 0.159E-07)
+   27 EPS pair=  43 value (error)      0.4300E+02 ( 0.188E-07)
+   28 EPS pair=  47 value (error)      0.4700E+02 ( 0.124E-07)
+   29 EPS pair=  52 value (error)      0.5200E+02 ( 0.914E-07)
+   30 EPS pair=  56 value (error)      0.5600E+02 ( 0.192E-07)
+   31 EPS pair=  60 value (error)      0.6000E+02 ( 0.119E-07)
+   32 EPS pair=  66 value (error)      0.6600E+02 ( 0.174E-07)
+   33 EPS pair=  71 value (error)      0.7100E+02 ( 0.514E-07)
+   34 EPS pair=  76 value (error)      0.7600E+02 ( 0.135E-07)
+   35 EPS pair=  80 value (error)      0.8000E+02 ( 0.112E-07)
+   36 EPS pair=  84 value (error)      0.8400E+02 ( 0.104E-07)
+   37 EPS pair=  87 value (error)      0.8700E+02 ( 0.145E-07)
+   38 EPS pair=  90 value (error)      0.9000E+02 ( 0.457E-07)
+   39 EPS pair=  92 value (error)      0.9200E+02 ( 0.177E-07)
+   40 EPS pair=  94 value (error)      0.9400E+02 ( 0.822E-07)
+   41 EPS pair=  96 value (error)      0.9600E+02 ( 0.239E-07)
+   42 EPS pair=  98 value (error)      0.9800E+02 ( 0.246E-07)
+   43 EPS pair= 101 value (error)      0.1010E+03 ( 0.117E-07)
+solving calc time=   16.0331207880000     
+extract solution calc time=  1.539149999999978E-002
+
+```
