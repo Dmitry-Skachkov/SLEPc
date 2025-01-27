@@ -70,4 +70,5 @@ The remaining installation will be the same
 
 [Example 2](Example_2) calculate eigenvalues and eigenvectors, store them into arrays, and check the solutions. 
 
+[Example 3](Example_3) use slepc_solver subroutine to solve 8000x8000 Hamiltonian and print convergence process.
 
