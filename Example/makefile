@@ -3,7 +3,6 @@ default: main
 export DIR=${PWD}
 export SLEPC_DIR=${DIR}/slepc-3.22.2
 export PETSC_DIR=${DIR}/petsc-3.22.2
-export SLEPC_ARCH=arch-linux-c-debug
 export PETSC_ARCH=arch-linux-c-debug
 
 CFLAGS     =
